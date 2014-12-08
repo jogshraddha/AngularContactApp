@@ -1,0 +1,12 @@
+<form name="contactForm" ng-submit="addContact(newContact)" novalidate>
+    <div class="form-group">
+        <label for="inputName">Name</label>
+        <input type="text" class="form-control" id="inputName" ng-model="newContact.name" required maxlength="5">
+    </div>
+    <div class="form-group">
+        <label for="inputNumber">Phone</label>
+        <input type="number" class="form-control" id="inputNumber"  ng-model="newContact.number" ng-pattern="/[0-9]/">
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a href="/" class="btn btn-default">Cancel</a>
+</form>
